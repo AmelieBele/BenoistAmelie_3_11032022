@@ -1,0 +1,164 @@
+@import"../base/typographie";
+
+*{
+    margin: 0px;
+}
+body{
+    font-family: $police-texte;
+}
+input::placeholder{
+    color:$couleur-localisation;
+    
+}
+.section-1{
+    background-color: $couleur-localisation-fond;
+    padding:20px;
+    
+   
+    .recherche-ville{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    i{
+        padding-right: 10px;
+        color: $couleur-localisation;
+        
+    }
+
+    #ville{
+        border: none;
+        background-color: $couleur-localisation-fond;
+        font-size: medium;
+        font-weight: bold;
+        color: black;
+        width: 140px;
+    }
+
+}
+
+.section-2{
+    background-color: $couleur-fond;
+    padding: 30px;
+    text-align: center;
+
+    p{
+        padding: 10px;
+    }
+
+    button{
+        margin-top: 15px;
+        padding: 15px;
+        background: linear-gradient(175deg, $couleur-secondaire, $couleur-primaire);
+        color: white;
+        border-radius: 25px;
+        font-weight: 700;
+        border:none;
+    }
+}
+
+.section-3{
+    padding: 40px 20px;
+
+    h2{
+        padding-bottom: 15px;
+    }
+
+    div{
+        margin:20px;
+        padding: 20px 0px;
+        background-color: $couleur-fond;
+        border-radius: 15px;
+        box-shadow: 5px 7px 10px $couleur-localisation-fond;
+        font-weight: bold;
+
+        .numero{
+           background-color: $couleur-primaire;
+           color: white;
+           border-radius: 50%;
+           padding: 3px 8px;
+           position: relative;
+           right: 13px;
+        }
+
+        .section-3-logo{
+            margin-right: 20px;
+            color:gray;
+        }
+
+    }
+}
+
+.section-4{
+    padding: 40px 20px;
+    background-color: $couleur-fond;
+    height: 50%;
+    
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    h2{
+        padding-bottom: 20px;
+    }
+
+    article{
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        margin-bottom: 20px;
+        height: 275px;
+        position: relative;
+       
+
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 200px;
+            border-radius:20px 20px 0px 0px;
+        }
+
+        .cartes-texte{
+            margin-left: 10px;
+            padding-top: 10px;
+            position: relative;
+        }
+
+        h3{
+            padding-bottom: 5px;
+        }
+        
+        i{
+            position: absolute;
+            right: 25px;
+            top: 15px;
+            font-size: x-large;
+            
+        }  
+        .coeur-couleur{
+            opacity: 0%;
+        }
+        .coeur-couleur:hover{
+            background: linear-gradient(#9356dc, #ff79da);
+            -webkit-background-clip: text;
+            color: transparent;
+            opacity: 100%;
+        }
+        
+
+        .nouveau-restaurant{
+            position: absolute;
+            top: 15px;
+            right: 10px;
+            background-color: $couleur-tertiare;
+            padding: 5px 15px;
+            color: #0a8d6d;
+            font-weight: bold;
+        }
+        
+    }
+}
