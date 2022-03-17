@@ -1,0 +1,77 @@
+@import"../base/typographie";
+    
+
+.image-haut-restos{
+    height: 400px;
+    width:100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.section-menus{
+
+    background-color: $couleur-localisation-fond;
+    position:absolute;
+    top: -35px;
+    position: relative;
+    border-radius: 30px;
+    
+   
+   h2{
+       font-size: xx-large;
+       text-align: center;
+       font-family: $police-logo;
+
+   }
+  
+   .coeur-titre-menus{
+       position: absolute;
+       top: 10px;
+       right: 150px;
+   }
+
+   .menus{
+       a{
+           text-decoration: none;
+           color: black;
+       }
+       h3{
+           padding: 30px 0 15px 15px;
+       }
+       h4{
+           padding-bottom: 5px;
+       }
+       .texte-menus{
+           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+       background-color: rgb(245, 245, 245);
+       border-radius: 10px;    
+       padding:15px 10px;
+       margin: 10px;
+       position: relative;
+       }
+ 
+       .validé{
+           display: none;
+       }
+
+
+   }   
+       .menus-bouton{
+       margin: 30px;
+       padding: 15px;
+       background: linear-gradient(175deg, $couleur-secondaire, $couleur-primaire);
+       color: white;
+       border-radius: 25px;
+       font-weight: 700;
+       border:none;
+       box-shadow:5px 5px 10px rgb(211, 210, 210);
+       
+           &:hover{
+               opacity: 0.8;
+               cursor: pointer;
+           }
+       }
+   
+
+
+}

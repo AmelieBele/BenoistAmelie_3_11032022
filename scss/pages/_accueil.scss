@@ -55,6 +55,11 @@ input::placeholder{
         border-radius: 25px;
         font-weight: 700;
         border:none;
+        box-shadow:5px 5px 10px rgb(211, 210, 210);
+
+        &:hover{
+            opacity: 0.8;
+        }
     }
 }
 
@@ -86,8 +91,8 @@ input::placeholder{
             margin-right: 20px;
             color:gray;
         }
-
-    }
+    }   
+        
 }
 
 .section-4{
@@ -144,7 +149,7 @@ input::placeholder{
         }
         .coeur-couleur:hover{
             background: linear-gradient(#9356dc, #ff79da);
-            -webkit-background-clip: text;
+            background-clip:text;                
             color: transparent;
             opacity: 100%;
         }
