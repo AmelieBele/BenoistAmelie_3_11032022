@@ -1,0 +1,17 @@
+@import"../base/typographie";
+
+header{
+    position:relative;
+
+    .fa-solid{
+        position: absolute;
+        top: 25px;
+        left:20px;
+        font-size: large;
+        color: black;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
