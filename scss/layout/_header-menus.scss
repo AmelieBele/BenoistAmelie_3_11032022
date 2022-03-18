@@ -13,5 +13,31 @@ header{
         &:hover{
             cursor: pointer;
         }
+
+        @include desktop{
+            display: none;
+        }
+  
+    }
+
+    p{
+        display: none;
+
+        @include desktop{
+            display: block;
+            position: absolute;
+            top: 25px;
+            left:20px;
+            font-size: large;
+            color: black;
+            cursor: pointer;
+            margin-left: 12.5%;
+            font-family: $police-texte;
+            font-weight: 400;
+
+            &:hover{
+                color: $couleur-primaire;
+            }
+        }
     }
 }
