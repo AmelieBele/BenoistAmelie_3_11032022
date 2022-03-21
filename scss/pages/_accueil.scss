@@ -61,6 +61,7 @@ input::placeholder{
         &:hover{
             opacity: 0.8;
             box-shadow: 8px 8px 15px grey;
+            cursor: pointer;
         }
     }
 }
@@ -138,12 +139,15 @@ input::placeholder{
     article{
         background-color: white;
         border-radius: 20px;
+        box-shadow: 5px 5px 10px $couleur-localisation-fond;
         display: flex;
         flex-direction: column;
         width:100%;
         margin-bottom: 20px;
         height: 275px;
         position: relative;
+
+
 
         @include desktop{
             width:50%;
