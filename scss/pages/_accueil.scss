@@ -41,7 +41,7 @@ input::placeholder{
 
 .section-2{
     background-color: $couleur-fond;
-    padding: 30px;
+    padding: 50px;
     text-align: center;
 
     p{
@@ -187,7 +187,7 @@ input::placeholder{
         
             &:hover{
                 background: linear-gradient(#9356dc, #ff79da);
-                background-clip:text;                
+                -webkit-background-clip:text;                
                 color: transparent;
                 opacity: 100%;
                 transform: scale(1.1);

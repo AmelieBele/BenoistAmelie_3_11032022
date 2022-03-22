@@ -11,6 +11,12 @@
     position: relative;
    
 }
+.image-haut-restos-palette{
+    max-height: 250px;
+    width:100%;
+    object-fit: cover;
+    position: relative;
+}
 
 
 .section-menus{
@@ -59,7 +65,7 @@
 
         &:hover{
             background: linear-gradient(#9356dc, #ff79da);
-            background-clip:text;                
+            -webkit-background-clip:text;                
             color: transparent;
             opacity: 100%;
             transform: scale(1.1);
@@ -73,15 +79,16 @@
        }
        h3{
            padding: 30px 0 15px 15px;
-           font-weight: 400;
-
-           .trait-sous-titre{
-            height: 3.5px;
-            width: 45px;
-            margin-top: 5px;
-            background-color: $couleur-tertiare;
-           }
+           font-weight: 400; 
            
+       }
+
+       .trait-sous-titre{
+        height: 3.5px;
+        width: 45px;
+        margin-left: 15px;
+        margin-top:-10px;
+        background-color: $couleur-tertiare;
        }
        h4{
            padding-bottom: 5px;
@@ -164,6 +171,8 @@
        .menus-bouton{
        margin: 30px;
        padding: 15px;
+       padding-left: 40px;
+       padding-right: 40px;
        background: linear-gradient(175deg, $couleur-secondaire, $couleur-primaire);
        color: white;
        border-radius: 25px;
