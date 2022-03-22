@@ -3,6 +3,7 @@
 /* Polices */
 /* Couleurs*/
 /* Polices */
+/* Menus arrivée en différée*/
 @keyframes menus {
   0% {
     transform: translateY(99999px);
@@ -23,22 +24,23 @@
   }
 }
 .anim-1 {
-  animation: menus 1s;
+  animation: menus 2s;
   animation-fill-mode: backwards;
 }
 
 .anim-2 {
-  animation: menus 1s;
+  animation: menus 2s;
   animation-delay: 0.5s;
   animation-fill-mode: backwards;
 }
 
 .anim-3 {
-  animation: menus 1s;
+  animation: menus 2s;
   animation-delay: 1s;
   animation-fill-mode: backwards;
 }
 
+/* Coche verte*/
 @keyframes validation {
   0% {
     transform: rotate(0deg);
@@ -49,6 +51,24 @@
 }
 .cercle-validé {
   animation: validation 400ms linear;
+}
+
+@keyframes slide {
+  0% {
+    width: 0%;
+  }
+  3% {
+    width: 2px;
+  }
+  50% {
+    width: 12.5px;
+  }
+  100% {
+    width: 25px;
+  }
+}
+.validé {
+  animation: slide 400ms ease-out;
 }
 
 /*Loader*/
@@ -453,12 +473,8 @@ input::placeholder {
   padding: 15px 10px;
   margin: 10px;
   display: flex;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .section-menus .menus .texte-menus:hover .validé {
-  display: block;
   background-color: #99E2D0;
   padding: 15px 25px 15px 25px;
   margin: -15px -15px -15px 0;
@@ -471,6 +487,22 @@ input::placeholder {
 .section-menus .menus .texte-menus .accompagnement {
   display: flex;
   justify-content: space-between;
+}
+.section-menus .menus .texte-menus .accompagnement .ellipsis {
+  max-width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media screen and (min-width: 769px) {
+  .section-menus .menus .texte-menus .accompagnement .ellipsis {
+    max-width: 700px;
+  }
+}
+@media screen and (min-width: 993px) {
+  .section-menus .menus .texte-menus .accompagnement .ellipsis {
+    max-width: 700px;
+  }
 }
 .section-menus .menus .texte-menus .accompagnement strong {
   padding-right: 25px;

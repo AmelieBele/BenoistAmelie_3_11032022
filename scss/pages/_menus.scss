@@ -59,7 +59,7 @@
 
         &:hover{
             background: linear-gradient(#9356dc, #ff79da);
-            -webkit-background-clip:text;                
+            background-clip:text;                
             color: transparent;
             opacity: 100%;
             transform: scale(1.1);
@@ -102,19 +102,14 @@
             padding:15px 10px;
             margin: 10px;
             display: flex;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            
         
- 
 
             &:hover{
                     
                 
 
                 .validé{
-                    display: block;
+                    
                     background-color: $couleur-tertiare;
                     padding: 15px 25px 15px 25px;
                     margin: -15px -15px -15px 0;
@@ -132,6 +127,21 @@
                 
                 display: flex;
                 justify-content: space-between;
+                
+                .ellipsis{
+                    max-width: 220px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+
+                    @include tablette{
+                        max-width: 700px;
+                    }
+
+                    @include desktop{
+                        max-width:700px;
+                    }
+                }
 
                 strong{
                     padding-right: 25px;

@@ -1,5 +1,7 @@
 @import"../base/typographie";
 
+
+/* Menus arrivée en différée*/
 @keyframes menus {
     0% {
         transform: translateY(99999px);
@@ -25,21 +27,25 @@
 }
 
 .anim-1{
-    animation: menus 1s;
+    animation: menus 2s;
     animation-fill-mode: backwards;
 }
 
 .anim-2{
-    animation: menus 1s;
+    animation: menus 2s;
     animation-delay: 0.5s;
     animation-fill-mode: backwards;
 }
 
 .anim-3{
-    animation: menus 1s;
+    animation: menus 2s;
     animation-delay: 1s;
     animation-fill-mode: backwards;
 }
+
+
+
+/* Coche verte*/ 
 
 @keyframes validation{
     
@@ -55,6 +61,29 @@
     animation: validation 400ms linear;
 }
 
+@keyframes slide{
+    0% {
+        width:0%
+        
+    }
+    3%{
+        width: 2px;
+    }
+    
+    50%{
+        width:12.5px
+    }
+
+    100%{
+        width:25px
+        
+        
+    }
+}
+
+.validé{
+    animation: slide 400ms ease-out;
+}
 
 
 

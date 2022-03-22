@@ -187,7 +187,7 @@ input::placeholder{
         
             &:hover{
                 background: linear-gradient(#9356dc, #ff79da);
-                -webkit-background-clip:text;                
+                background-clip:text;                
                 color: transparent;
                 opacity: 100%;
                 transform: scale(1.1);
